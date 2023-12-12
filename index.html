@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio Webpage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/9fff06ab33.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <!----------------------------------------------- Home Page/ NavBar ---------------------------------------->
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--------------------------------------- Header/ Logo Section ---------------------------------------->
+        <header>
+            <div class="content-logo">
+                <img class="logo" src="/images/luis.png" title="LG-logo">  
+            </div>
+        </header>
+        <img src="/images/me2_0091.jpg" title="pic-landing-page" class="my-main-pic">
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm <span>Luis</span><br>Guerra from New Jersey.</h1>
+        </div>
+        <div class="page-wrpr">
+            ..
+        </div>
+        <!----------------------------------------- About Section ------------------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/luis-about-me.jpg" title="about-pic">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a Web Developer with experience in HTML, CSS, JavaScript, Responsive Design, ReactJS and NodeJS.
+                          Front-end web development is a passion of mine. I enjoy working on my
+                          web developer skills and staying up to date on the latest technology in my field.</p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br>Creating web pages and applications</li>
+                                <li><span>CSS</span><br>Styling web elements</li>
+                                <li><span>JavaScript</span><br>Interactive features of the website</li>
+                                <li><span>Responsive Design</span><br>Making websites look good on all devices</li>
+                                <li><span>ReactJS</span><br>Building user interface components</li>
+                                <li><span>NodeJS</span><br>Server side programming</li>    
+                                <li><span>TypeScript</span><br>Extending JavaScript by adding types to the language</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>HTML training through www.Codecademy.com</li>
+                                <li><span>2023 - Current</span><br>CSS training through www.Codecademy.com</li>
+                                <li><span>2023 - Current</span><br>JavaScript training through www.Codecademy.com</li>
+                                <li><span>2023 - Current</span><br>Responsive Design training through www.Codecademy.com</li>  
+                                <li><span>2023 - Current</span><br>ReactJS training through www.Codecademy.com</li>
+                                <li><span>2023 - Current</span><br>NodeJS training through www.Codecademy.com</li>
+                                <li><span>2023 - Still in the learning phase</span><br>TypeScript training through www.Codecademy.com</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Front-End Web Developer</li>
+                                <li><span>2023</span><br>Professional Certification from www.Codecademy.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrpr2">
+            ..
+        </div>
+        <!-- ----------portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title2">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/weather-app.png" title="weather-app">
+                        <div class="layer">
+                            <h3>WeatherApp</h3>
+                            <p>The app tells you temperature and weather conditions in any city. Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt" title="weather-app"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Wordle Game.png" title="wordle-app">
+                        <div class="layer">
+                            <h3>Wordle Game App</h3>
+                            <p>The app challenges you in the word game of Wordle!! Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt" title="wordle"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/qr-code-screenshot.png" title="qr-code-generator">
+                        <div class="layer">
+                            <h3>QR Generator App</h3>
+                            <p>The app generates a QR for any website you'd like to link it to. Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt" title="qr"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div class="page-wrpr3">
+            ..
+        </div>
+        <!------------- Contact ---------------------->
+        <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Info</h2>
+                    <p>Luis D. Guerra</p>
+                    <p><i class="fas fa-paper-plane"></i> luisdguerra2024@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> (908)230-1475</p>
+                        <div class="social-icons">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="luisdguerra2024@gmail.com" action="https://script.google.com/macros/s/AKfycby_G2KQhdyHK596etfPztUbxFXoU60bRLoi6kuNXmTY9eZSk-CuZhQtv_43pbHE0nRuVw/exec">
+                        <div class="form-elements"><br>
+                            <b class="content-head">Contact Me!</b>
+                            <br>Contact Me!<br>
+                            <input type="text" name="name" autocomplete='given-name' placeholder="Your Name" required/><br>
+                            <br>
+                            <input type="email" name="email" autocomplete='off' placeholder="Your Email" required/><br>
+                            <br>
+                            <input type="number" name="phone" autocomplete='off' placeholder="Phone Number"/><br>
+                            <br>
+                            <textarea name="message" rows="5" cols="22" placeholder="Your Message" title="message" required></textarea><br>
+                            <br>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </div>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="page-wrpr4">
+        ..
+    </div>
+    <!------------------------------------ JavaScript ------------------------------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+      </script>
+              
+      <script data-cf async="false" type="text/javascript">
+      
+        (function() {
+      function validEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+      }
+    
+      function validateHuman(honeypot) {
+        if (honeypot) {
+          console.log("Robot Detected!");
+          return true;
+        } else {
+          console.log("Welcome Human!");
+        }
+      }
+      function getFormData(form) {
+        var elements = form.elements;
+    
+        var fields = Object.keys(elements).filter(function(k) {
+              return (elements[k].name !== "honeypot");
+        }).map(function(k) {
+          if(elements[k].name !== undefined) {
+            return elements[k].name;
+          }else if(elements[k].length > 0){
+            return elements[k].item(0).name;
+          }
+        }).filter(function(item, pos, self) {
+          return self.indexOf(item) == pos && item;
+        });
+    
+        var formData = {};
+        fields.forEach(function(name){
+          var element = elements[name];
+          formData[name] = element.value;
+          if (element.length) {
+            var data = [];
+            for (var i = 0; i < element.length; i++) {
+              var item = element.item(i);
+              if (item.checked || item.selected) {
+                data.push(item.value);
+              }
+            }
+            formData[name] = data.join(', ');
+          }
+        });
+              
+        // add form-specific values into the data
+        formData.formDataNameOrder = JSON.stringify(fields);
+        formData.formGoogleSheetName = form.dataset.sheet || "Sheet-01"; // default sheet name
+        formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+    
+        console.log(formData);
+        return formData;
+      }
+    
+      function handleFormSubmit(event) {  
+        event.preventDefault();           
+        var form = event.target;
+        var data = getFormData(form);         
+        if( data.email && !validEmail(data.email) ) {   
+          var invalidEmail = form.querySelector(".email-invalid");
+          if (invalidEmail) {
+            invalidEmail.style.display = "block";
+            return false;
+          }
+        } else {
+          disableAllButtons(form);
+          var url = form.action;
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function() {
+              console.log(xhr.status, xhr.statusText);
+              console.log(xhr.responseText);
+              var formElements = form.querySelector(".form-elements")
+              if (formElements) {
+                formElements.style.display = "none"; // hide form
+              }
+              var thankYouMessage = form.querySelector(".thankyou_message");
+              if (thankYouMessage) {
+                thankYouMessage.style.display = "block";
+              }
+              return;
+          };
+          var encoded = Object.keys(data).map(function(k) {
+              return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+          }).join('&');
+          xhr.send(encoded);
+        }
+      }
+                
+      function loaded() {
+        console.log("Contact form submission handler loaded successfully.");
+        var forms = document.querySelectorAll("form.gform");
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].addEventListener("submit", handleFormSubmit, false);
+        }
+      };
+      document.addEventListener("DOMContentLoaded", loaded, false);
+    
+      function disableAllButtons(form) {
+        var buttons = form.querySelectorAll("button");
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].disabled = true;
+        }
+      }
+        });  
+      </script>  
+    </body>
+</html>
